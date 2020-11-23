@@ -16,4 +16,6 @@ This application is a feature catalogue viewer and editor and conforms to IHO S-
 
 * Please raise issues in the issues tab of this repository and they can be addressed. Insert as much information as possible. This application is still a BETA version and there are some unexpected behaviours and unimplemented functionality (still). 
 
+##  Current Version
+
 ![image](Doc/ss1.png)
