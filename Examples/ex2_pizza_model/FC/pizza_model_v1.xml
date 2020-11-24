@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<S100FC:S100_FC_FeatureCatalogue xmlns:S100Base="http://www.iho.int/S100Base" xmlns:S100CI="http://www.iho.int/S100CI" xmlns:S100FD="http://www.iho.int/S100FD" xmlns:xsi="http://www.w3.org/1999/xlink" xmlns:S100FC="http://www.iho.int/S100FC">
+    <S100FC:name>Pizza, derived from model</S100FC:name>
+    <S100FC:scope>global</S100FC:scope>
+    <S100FC:fieldOfApplication>none</S100FC:fieldOfApplication>
+    <S100FC:versionNumber>0.0</S100FC:versionNumber>
+    <S100FC:versionDate>2020-11-24Z</S100FC:versionDate>
+    <S100FC:producer>
+        <S100CI:role>author</S100CI:role>
+        <S100CI:party>
+            <S100CI:CI_Organisation>
+                <S100CI:name>None</S100CI:name>
+                <S100CI:contactInfo>
+                    <S100CI:address>
+                        <S100CI:city>Frome</S100CI:city>
+                        <S100CI:administrativeArea>Somerset</S100CI:administrativeArea>
+                        <S100CI:country>UK</S100CI:country>
+                        <S100CI:electronicMailAddress>jp@jpsworldoffun.com</S100CI:electronicMailAddress>
+                    </S100CI:address>
+                    <S100CI:onlineResource>
+                        <S100CI:linkage>www.iictechnologies.com</S100CI:linkage>
+                    </S100CI:onlineResource>
+                </S100CI:contactInfo>
+            </S100CI:CI_Organisation>
+        </S100CI:party>
+    </S100FC:producer>
+    <S100FC:classification>unclassified</S100FC:classification>
+    <S100FC:S100_FC_SimpleAttributes>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>categoryOfTopping</S100FC:name>
+            <S100FC:definition>Optional extras on top of the pizza.</S100FC:definition>
+            <S100FC:code>categoryOfTopping</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>enumeration</S100FC:valueType>
+            <S100FC:listedValues>
+                <S100FC:listedValue>
+                    <S100FC:label>cheese</S100FC:label>
+                    <S100FC:definition>a nice mozarella</S100FC:definition>
+                    <S100FC:code>1</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>tomato</S100FC:label>
+                    <S100FC:definition>or passata....</S100FC:definition>
+                    <S100FC:code>2</S100FC:code>
+                </S100FC:listedValue>
+                <S100FC:listedValue>
+                    <S100FC:label>ham</S100FC:label>
+                    <S100FC:definition>from pigs. Not for vegetarians</S100FC:definition>
+                    <S100FC:code>3</S100FC:code>
+                </S100FC:listedValue>
+            </S100FC:listedValues>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>size</S100FC:name>
+            <S100FC:definition>the size of the pizza (in inches of course)</S100FC:definition>
+            <S100FC:code>size</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>real</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>base</S100FC:name>
+            <S100FC:definition>base of the pizza</S100FC:definition>
+            <S100FC:code>base</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>name</S100FC:name>
+            <S100FC:definition>the name in the language specified</S100FC:definition>
+            <S100FC:code>name</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>description</S100FC:name>
+            <S100FC:definition>description</S100FC:definition>
+            <S100FC:code>description</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>nutritionalValue</S100FC:name>
+            <S100FC:definition>nutritionalValue</S100FC:definition>
+            <S100FC:code>nutritionalValue</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>language</S100FC:name>
+            <S100FC:definition>language</S100FC:definition>
+            <S100FC:code>language</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+    </S100FC:S100_FC_SimpleAttributes>
+    <S100FC:S100_FC_ComplexAttributes>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>featureName</S100FC:name>
+            <S100FC:definition>featureName supports multilingual names in attributes for the abstract ingrdient and anything derived from it.</S100FC:definition>
+            <S100FC:code>featureName</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="language"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="name"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+    </S100FC:S100_FC_ComplexAttributes>
+    <S100FC:S100_FC_Roles/>
+    <S100FC:S100_FC_InformationAssociations/>
+    <S100FC:S100_FC_FeatureAssociations/>
+    <S100FC:S100_FC_InformationTypes/>
+    <S100FC:S100_FC_FeatureTypes>
+        <S100FC:S100_FC_FeatureType isAbstract="true">
+            <S100FC:name>ingredient</S100FC:name>
+            <S100FC:definition>No definition set for ingredient</S100FC:definition>
+            <S100FC:code>ingredient</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="description"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="nutritionalValue"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="featureName"/>
+            </S100FC:attributeBinding>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>noGeometry</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>Pizza</S100FC:name>
+            <S100FC:definition>A pizza is a round meal, usually cooked in a wood fired oven.</S100FC:definition>
+            <S100FC:code>Pizza</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="size"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="categoryOfTopping"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="base"/>
+            </S100FC:attributeBinding>
+            <S100FC:superType>ingredient</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+    </S100FC:S100_FC_FeatureTypes>
+</S100FC:S100_FC_FeatureCatalogue>
