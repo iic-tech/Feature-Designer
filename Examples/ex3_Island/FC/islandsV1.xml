@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<S100FC:S100_FC_FeatureCatalogue xmlns:S100Base="http://www.iho.int/S100Base" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:S100CI="http://www.iho.int/S100CI" xmlns:S100FD="http://www.iho.int/S100FD" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:S100FC="http://www.iho.int/S100FC">
+    <S100FC:name>New</S100FC:name>
+    <S100FC:scope>global</S100FC:scope>
+    <S100FC:fieldOfApplication>none</S100FC:fieldOfApplication>
+    <S100FC:versionNumber>0.0</S100FC:versionNumber>
+    <S100FC:versionDate>2020-12-04Z</S100FC:versionDate>
+    <S100FC:producer>
+        <S100CI:role>author</S100CI:role>
+        <S100CI:party>
+            <S100CI:CI_Organisation>
+                <S100CI:name>None</S100CI:name>
+                <S100CI:contactInfo>
+                    <S100CI:address>
+                        <S100CI:city>Frome</S100CI:city>
+                        <S100CI:administrativeArea>Somerset</S100CI:administrativeArea>
+                        <S100CI:country>UK</S100CI:country>
+                        <S100CI:electronicMailAddress>jp@jpsworldoffun.com</S100CI:electronicMailAddress>
+                    </S100CI:address>
+                    <S100CI:onlineResource>
+                        <S100CI:linkage>www.iictechnologies.com</S100CI:linkage>
+                    </S100CI:onlineResource>
+                </S100CI:contactInfo>
+            </S100CI:CI_Organisation>
+        </S100CI:party>
+    </S100FC:producer>
+    <S100FC:classification>unclassified</S100FC:classification>
+    <S100FC:S100_FC_SimpleAttributes>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>language</S100FC:name>
+            <S100FC:definition>international language for a feature name</S100FC:definition>
+            <S100FC:code>language</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>name</S100FC:name>
+            <S100FC:definition>name of an entity</S100FC:definition>
+            <S100FC:code>name</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+        <S100FC:S100_FC_SimpleAttribute>
+            <S100FC:name>telephone</S100FC:name>
+            <S100FC:definition>contact telephone number</S100FC:definition>
+            <S100FC:code>telephone</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:valueType>text</S100FC:valueType>
+        </S100FC:S100_FC_SimpleAttribute>
+    </S100FC:S100_FC_SimpleAttributes>
+    <S100FC:S100_FC_ComplexAttributes>
+        <S100FC:S100_FC_ComplexAttribute>
+            <S100FC:name>featureName</S100FC:name>
+            <S100FC:definition>a (possibly multi-lingual) name of an entity</S100FC:definition>
+            <S100FC:code>featureName</S100FC:code>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="language"/>
+            </S100FC:subAttributeBinding>
+            <S100FC:subAttributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="name"/>
+            </S100FC:subAttributeBinding>
+        </S100FC:S100_FC_ComplexAttribute>
+    </S100FC:S100_FC_ComplexAttributes>
+    <S100FC:S100_FC_Roles>
+        <S100FC:S100_FC_Role>
+            <S100FC:name>has</S100FC:name>
+            <S100FC:definition>has</S100FC:definition>
+            <S100FC:code>has</S100FC:code>
+        </S100FC:S100_FC_Role>
+        <S100FC:S100_FC_Role>
+            <S100FC:name>for</S100FC:name>
+            <S100FC:definition>one end of a contact relationship. contact details for a particular entity</S100FC:definition>
+            <S100FC:code>for</S100FC:code>
+            <S100FC:remarks></S100FC:remarks>
+        </S100FC:S100_FC_Role>
+        <S100FC:S100_FC_Role>
+            <S100FC:name>partOf</S100FC:name>
+            <S100FC:definition>island group membership composition</S100FC:definition>
+            <S100FC:code>partOf</S100FC:code>
+        </S100FC:S100_FC_Role>
+        <S100FC:S100_FC_Role>
+            <S100FC:name>consistsOf</S100FC:name>
+            <S100FC:definition>IHO relationship for aggregation</S100FC:definition>
+            <S100FC:code>consistsOf</S100FC:code>
+        </S100FC:S100_FC_Role>
+        <S100FC:S100_FC_Role>
+            <S100FC:name>componentOf</S100FC:name>
+            <S100FC:definition>IHO standard aggregation relationship</S100FC:definition>
+            <S100FC:code>componentOf</S100FC:code>
+            <S100FC:remarks></S100FC:remarks>
+        </S100FC:S100_FC_Role>
+    </S100FC:S100_FC_Roles>
+    <S100FC:S100_FC_InformationAssociations>
+        <S100FC:S100_FC_InformationAssociation isAbstract="false">
+            <S100FC:name>Contact</S100FC:name>
+            <S100FC:definition>Contact</S100FC:definition>
+            <S100FC:code>Contact</S100FC:code>
+            <S100FC:role ref="has"/>
+            <S100FC:role ref="for"/>
+        </S100FC:S100_FC_InformationAssociation>
+    </S100FC:S100_FC_InformationAssociations>
+    <S100FC:S100_FC_FeatureAssociations>
+        <S100FC:S100_FC_FeatureAssociation isAbstract="false">
+            <S100FC:name>IslandGroupMembership</S100FC:name>
+            <S100FC:definition>represents a relationship identifying a land area as part of an island group</S100FC:definition>
+            <S100FC:code>IslandGroupMembership</S100FC:code>
+            <S100FC:role ref="consistsOf"/>
+            <S100FC:role ref="componentOf"/>
+        </S100FC:S100_FC_FeatureAssociation>
+        <S100FC:S100_FC_FeatureAssociation isAbstract="false">
+            <S100FC:name>IslandAggregation</S100FC:name>
+            <S100FC:definition>represents a hierarchical relationship identifying an island group as a subgroup of another island group</S100FC:definition>
+            <S100FC:code>IslandAggregation</S100FC:code>
+            <S100FC:role ref="consistsOf"/>
+            <S100FC:role ref="componentOf"/>
+        </S100FC:S100_FC_FeatureAssociation>
+    </S100FC:S100_FC_FeatureAssociations>
+    <S100FC:S100_FC_InformationTypes>
+        <S100FC:S100_FC_InformationType>
+            <S100FC:name>ContactDetails</S100FC:name>
+            <S100FC:definition>No definition set for ContactDetails</S100FC:definition>
+            <S100FC:code>ContactDetails</S100FC:code>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="name"/>
+            </S100FC:attributeBinding>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="telephone"/>
+            </S100FC:attributeBinding>
+        </S100FC:S100_FC_InformationType>
+    </S100FC:S100_FC_InformationTypes>
+    <S100FC:S100_FC_FeatureTypes>
+        <S100FC:S100_FC_FeatureType isAbstract="true">
+            <S100FC:name>NamedPlace</S100FC:name>
+            <S100FC:definition>No definition set for NamedPlace</S100FC:definition>
+            <S100FC:code>NamedPlace</S100FC:code>
+            <S100FC:attributeBinding sequential="false">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper xsi:nil="true"/>
+                </S100FC:multiplicity>
+                <S100FC:attribute ref="featureName"/>
+            </S100FC:attributeBinding>
+            <S100FC:permittedPrimitives>noGeometry</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>IslandGroup</S100FC:name>
+            <S100FC:definition>a Group of Islands</S100FC:definition>
+            <S100FC:code>IslandGroup</S100FC:code>
+            <S100FC:alias></S100FC:alias>
+            <S100FC:superType>NamedPlace</S100FC:superType>
+            <S100FC:featureUseType>geographic</S100FC:featureUseType>
+            <S100FC:featureBinding roleType="aggregation">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:association ref="IslandAggregation"/>
+                <S100FC:role ref="consistsOf"/>
+                <S100FC:featureType ref="IslandGroup"/>
+            </S100FC:featureBinding>
+            <S100FC:featureBinding roleType="association">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper xsi:nil="true"/>
+                </S100FC:multiplicity>
+                <S100FC:association ref="IslandGroupMembership"/>
+                <S100FC:role ref="consistsOf"/>
+                <S100FC:featureType ref="IslandGroup"/>
+            </S100FC:featureBinding>
+            <S100FC:permittedPrimitives>surface</S100FC:permittedPrimitives>
+        </S100FC:S100_FC_FeatureType>
+        <S100FC:S100_FC_FeatureType isAbstract="false">
+            <S100FC:name>LandArea</S100FC:name>
+            <S100FC:definition>No definition set for LandArea</S100FC:definition>
+            <S100FC:code>LandArea</S100FC:code>
+            <S100FC:informationBinding roleType="association">
+                <S100FC:multiplicity>
+                    <S100Base:lower>1</S100Base:lower>
+                    <S100Base:upper infinite="false">1</S100Base:upper>
+                </S100FC:multiplicity>
+                <S100FC:association ref="Contact"/>
+                <S100FC:role ref="for"/>
+                <S100FC:informationType ref="ContactDetails"/>
+            </S100FC:informationBinding>
+            <S100FC:superType>NamedPlace</S100FC:superType>
+            <S100FC:featureBinding roleType="association">
+                <S100FC:multiplicity>
+                    <S100Base:lower>0</S100Base:lower>
+                    <S100Base:upper xsi:nil="true"/>
+                </S100FC:multiplicity>
+                <S100FC:association ref="IslandGroupMembership"/>
+                <S100FC:role ref="consistsOf"/>
+                <S100FC:featureType ref="IslandGroup"/>
+            </S100FC:featureBinding>
+        </S100FC:S100_FC_FeatureType>
+    </S100FC:S100_FC_FeatureTypes>
+</S100FC:S100_FC_FeatureCatalogue>

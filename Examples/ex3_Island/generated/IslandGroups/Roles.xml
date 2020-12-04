@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<S100FC:S100_FC_FeatureCatalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.iho.int/S100FC S100FC.xsd"
+    xmlns:S100FC="http://www.iho.int/S100FC" xmlns:S100Base="http://www.iho.int/S100Base"
+    xmlns:S100FD="http://www.iho.int/S100FD" xmlns:S100CI="http://www.iho.int/S100CI"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!-- IIC Std header info      -->
+	<!-- Version 1.0 Roles        -->
+	
+    <S100FC:name>S-101</S100FC:name>
+    <S100FC:scope>Ocean, Coastal, Ports and Harbors. Excludes Inland waters. Supports QualityOfBathymetricData and 2015 updates to FC model.</S100FC:scope>
+    <S100FC:fieldOfApplication>Marine Navigation</S100FC:fieldOfApplication>
+    <S100FC:versionNumber>1.0.0</S100FC:versionNumber>
+    <S100FC:versionDate>2019-04-09</S100FC:versionDate>    <S100FC:producer>
+        <S100CI:role>pointOfContact</S100CI:role>
+        <S100CI:party>
+            <S100CI:CI_Organisation>
+                <S100CI:name>International Hydrographic Organization</S100CI:name>
+                <S100CI:contactInfo>
+                    <S100CI:address>
+                        <S100CI:administrativeArea>4b quai Antonie 1er</S100CI:administrativeArea>
+                        <S100CI:country>Monaco</S100CI:country>
+                        <S100CI:electronicMailAddress>info@iho.int</S100CI:electronicMailAddress>
+                    </S100CI:address>
+                    <S100CI:onlineResource>
+                        <S100CI:linkage>www.iho.int</S100CI:linkage>
+                    </S100CI:onlineResource>
+                </S100CI:contactInfo>
+            </S100CI:CI_Organisation>
+        </S100CI:party>
+    </S100FC:producer>
+	<S100FC:S100_FC_Roles>
+<!-- Roles listed from Roles class -->
+		<S100FC:S100_FC_Role>
+                    <S100FC:name>has</S100FC:name><!-- Role name -->
+                    <S100FC:definition>has</S100FC:definition>
+                    <S100FC:code>has</S100FC:code>
+        </S100FC:S100_FC_Role>				
+		<S100FC:S100_FC_Role>
+                    <S100FC:name>for</S100FC:name><!-- Role name -->
+                    <S100FC:definition>one end of a contact relationship. contact details for a particular entity</S100FC:definition>
+                    <S100FC:code>for</S100FC:code>
+        </S100FC:S100_FC_Role>				
+		<S100FC:S100_FC_Role>
+                    <S100FC:name>partOf</S100FC:name><!-- Role name -->
+                    <S100FC:definition>island group membership composition</S100FC:definition>
+                    <S100FC:code>partOf</S100FC:code>
+        </S100FC:S100_FC_Role>				
+		<S100FC:S100_FC_Role>
+                    <S100FC:name>consistsOf</S100FC:name><!-- Role name -->
+                    <S100FC:definition>IHO relationship for aggregation</S100FC:definition>
+                    <S100FC:code>consistsOf</S100FC:code>
+        </S100FC:S100_FC_Role>				
+		<S100FC:S100_FC_Role>
+                    <S100FC:name>componentOf</S100FC:name><!-- Role name -->
+                    <S100FC:definition>IHO standard aggregation relationship</S100FC:definition>
+                    <S100FC:code>componentOf</S100FC:code>
+        </S100FC:S100_FC_Role>				
+	</S100FC:S100_FC_Roles>
+</S100FC:S100_FC_FeatureCatalogue>
