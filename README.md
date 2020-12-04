@@ -3,7 +3,7 @@ Test repository for IIC's Feature Designer application.
 
 This application is a feature catalogue viewer and editor and conforms to IHO S-100 feature catalogue XML. It can read, profile and create feature catalogues for use with any IHO S-100 conformant data production system.
 
-Current Version is 10.1.5
+Current Version is 10.1.7
 
 ## Location
 
@@ -18,6 +18,6 @@ Current Version is 10.1.5
 
 * Please raise issues in the issues tab of this repository and they can be addressed. Insert as much information as possible. This application is still a BETA version and there are some unexpected behaviours and unimplemented functionality (still). 
 
-##  Current Version
+##  Main Window
 
 ![image](Doc/ss1.png)
